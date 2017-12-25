@@ -1,5 +1,5 @@
 
-## Wildcard path
+## Wildcard path with hostname
 ```yaml
 apiVersion: extensions/v1beta1
 kind: Ingress
