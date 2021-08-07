@@ -1,5 +1,5 @@
-kubectl create secret tls cloud4-tls-cert --key=cert.key --cert=cert.cert  
---
+```kubectl create secret tls cloud4-tls-cert --key=cert.key --cert=cert.cert```  
+```
 kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1alpha3
 kind: Gateway
@@ -18,7 +18,9 @@ spec:
       credentialName: cloud4-tls-cert  
     hosts:
     - "*"
----
+```
+```
+kubectl apply -f - <<EOF
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
