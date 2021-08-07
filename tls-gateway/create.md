@@ -40,3 +40,6 @@ spec:
           number: 8080
         host: wel
 EOF
+```
+
+^ this need not be executed in istio-system ns, any namespace should work
